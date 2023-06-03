@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: laravel-new
+    ports:
+      - 7070:70
+    volumes:
+      - .:/var/www/html
+
